@@ -4,7 +4,6 @@
 
 h1, h2, h3, h4, h5, h6
 {
-    font-family: 'Roboto Slab', serif;
 }
 
 div
@@ -135,8 +134,7 @@ header .container-fluid
 {
     padding-top: 3em;
     padding-bottom: 3em;
-    background-color: rgb(112, 48, 160);
-;
+    background-color: rgb(20, 0, 49);
 }
 
 .opaline h1,
@@ -152,7 +150,7 @@ header .container-fluid
 
 i
 {
-            color: rgb(117, 251, 198)
+    color: #01ffc2;
 }
 
 .opaline .boxes
