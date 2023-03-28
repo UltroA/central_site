@@ -1,6 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#button').click(function(e) {
+                var inputvalue = $("#input").val();
+                window.location.replace(" http://"+inputvalue);
+            });
+        });
+        </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,13 +53,32 @@
       <!-- Site Overlay -->
 
         <div class="jumbotron">
-            <h1>
-            <strong>Выбери мир</strong></h1>
-            <p><a class="btn btn-primary btn-lg" role="button" href="https://play.decentraland.org/">Decentraland</a>
-            <p><a class="btn btn-primary btn-lg" role="button" href="https://www.sandbox.game/en/">Sandbox</a>
-            <p><a class="btn btn-primary btn-lg" role="button" href="https://axieinfinity.com/">Axieinfinity</a>
-            <p><a class="btn btn-primary btn-lg" role="button" href="https://sensoriumgalaxy.com/">Sensorium</a>
-            <p><a class="btn btn-primary btn-lg" role="button" href="https://krunker.io/">Krunker</a>
+            <h1 class="wow fadeInUp" style="color: white;  font-weight: bolder;"><a class="disabled" style="text-decoration: none; font-weight: bolder; color: #01ffc2">Выбери</a>  мир или <a class="disabled" style="text-decoration: none; font-weight: bolder; color: #01ffc2">найдите</a> его сами</h1>
+            <input type="text" value="" id="input" style="height: 50px; width: 500px; font-size: 30px">
+            <p><button type="button" id="button"  class="btn btn-primary btn-lg" role="button">Перейти</button></p>
+            <div class="container">
+                <div class="row features col-md-9 col-md-offset-1"  style="position: relative; left: 40px">
+                    <strong> <a class="text-center wow fadeInUp btn btn-primary btn-lg" role="button" href="https://play.decentraland.org/" style="background: #8742D6; color: white"><img src="static/images/dcl.png" style="width: 100px; height: 100px">Decentraland</a>
+                    <a class="text-center wow fadeInUp btn btn-primary btn-lg" role="button" href="https://www.sandbox.game/en/" style="background: #8742D6; color: white"><img src="static/images/SB.png" style="width: 100px; height: 100px">Sandbox</a>
+                    <a class="text-center wow fadeInUp btn btn-primary btn-lg" role="button" href="https://axieinfinity.com/" style="background: #8742D6; color: white"><img src="static/images/anx.png" style="width: 100px; height: 100px">Axieinfinity</a>
+                </strong></div>
+                <div class="row features col-md-9 col-md-offset-1"  style="position: relative; left: 35px">
+                <strong><a class="text-center wow fadeInUp btn btn-primary btn-lg" role="button" href="https://sensoriumgalaxy.com/" style="background: #8742D6; color: white"><img src="static/images/sor.png" style="width: 100px; height: 100px">Sensorium</a>
+                    <a class="text-center wow fadeInUp btn btn-primary btn-lg" role="button" href="https://krunker.io/" style="background: #8742D6; color: white"><img src="static/images/KRk.png" style="width: 100px; height: 100px">Krunker</a>
+                    <a class="text-center wow fadeInUp btn btn-primary btn-lg" role="button" href="https://https://neos.com/" style="background: #8742D6; color: white"><img src="static/images/NEOS.png" style="width: 100px; height: 100px">Neos</a>
+            </strong></div>
+                <div class="row features col-md-9 col-md-offset-1"  style="position: relative; left: 40px">
+                <strong><a class="text-center wow fadeInUp btn btn-primary btn-lg" role="button" href="https://www.netvrk.co/" style="background: #8742D6; color: white"><img src="static/images/netvrk.webp" style="width: 120px; height: 100px">Netvrk</a>
+                    <a class="text-center wow fadeInUp btn btn-primary btn-lg" role="button" href="https://app.gala.games/" style="background: #8742D6; color: white"><img src="static/images/gala.png" style="width: 100px; height: 100px">Gala</a>
+                    <a class="text-center wow fadeInUp btn btn-primary btn-lg" role="button" href="https://hello.vrchat.com/" style="background: #8742D6; color: white"><img src="static/images/VRChat.png" style="width: 100px; height: 100px">VRchat</a>
+            </strong></div>
+                <div class="row features col-md-9 col-md-offset-1" style="position: relative; left: 35px">
+                <strong><a class="text-center wow fadeInUp btn btn-primary btn-lg" role="button" href="https://www.somniumspace.com/" style="background: #8742D6; color: white"><img src="static/images/somma.png" style="width: 120px; height: 100px">Netvrk</a>
+                    <a class="text-center wow fadeInUp btn btn-primary btn-lg" role="button" href="https://www.mobox.io/#/" style="background: #8742D6; color: white"><img src="static/images/Mobox.png" style="width: 150px; height: 100px">Mobox</a>
+                    <a class="text-center wow fadeInUp btn btn-primary btn-lg" role="button" href="https://play.alienworlds.io/" style="background: #8742D6; color: white"><img src="static/images/alienworlds.svg" style="width: 100px; height: 100px">Alienworlds</a>
+            </strong></div>
+            </div>
+            </div>
 
         </div>
 
